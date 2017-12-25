@@ -6,17 +6,35 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-		<script type="text/javascript" src="assets/javascript/app.js"></script>
+		
 	</head>
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">Who's Rhymes Are These?</div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12"><span id="questionTimer"></span></div>
-        <div class="col-xs-12"></div>
-        <div class="col-xs-12"></div>
-    </div>
-</div>
+<body>
+	<header>
+		<h1><img src="assets/images/hipHopLogo.png" alt="Man with microphone stand" class="hipHop"><span>Who's Rhymes Are These?</span></h1>
+	
+	</header>
+
+	<div class="container">
+		<button id="startButton">Start</button>
+
+		<div id="status"></div>
+
+		<!-- Displays question and answers. -->
+		<div class="questionBox">
+			<div id="question1">
+				<p id="question"></p>
+				<p class="answer" id="answerChoice0"></p>
+				<p class="answer" id="answerChoice1"></p>
+				<p class="answer" id="answerChoice2"></p>
+				<p class="answer" id="answerChoice3"></p>
+			</div>
+		</div>
+
+		<div class="timer"> 
+			<p>Time:&nbsp; <span id="time"></span></p>
+		</div>
+	</div>
+
+
+</body>
 </html>
