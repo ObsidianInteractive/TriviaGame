@@ -31,8 +31,9 @@ span {
 
 h1 {
 	margin: 10px auto;
-	font-family: 'Francois One', sans-serif;
-	font-size:54px;
+	font-family: 'Times New Roman', 'Times', 'serif';
+    font-size:70px;
+    color: azure;
 }
 .container {
 	width:55%;
@@ -43,11 +44,12 @@ h1 {
 	text-align:center;
 	font-family: 'PT Sans', sans-serif;
 	font-size:20px;
-	position:relative;
+    position:relative;
+    left: 375px;
 }
 
 #startButton{
-	margin-top:10px;
+	margin-top:40px;
 	padding:5px;
 	width:100px;
 	font-family: 'Francois One', sans-serif;
@@ -56,13 +58,16 @@ h1 {
 #startButton:hover{
 	cursor:pointer;
 }
+.question {
+    text-decoration: bold;
+}
 .answer{
 	padding:5px;
 	margin: 10px auto;
 	width:40%;
 }
 .answer:hover{
-	background:#e3cdf4;
+	background:#ffd3a0;
 	cursor:pointer;
 }
 
@@ -81,6 +86,6 @@ h1 {
 
 .timer {
 	font-weight:bolder;
-	font-size:25px;
+	font-size:30px;
 	margin-left:20px;
 }
