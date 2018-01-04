@@ -38,7 +38,7 @@ var number=0;
 
 $(".timer").css("visibility","hidden");
 
-	//hid start button, show first question when start button is clicked
+	//hide start button, show first question when start button is clicked
 	$("#startButton").on("click", function(){
 		$("#startButton").css("visibility","hidden");
 		$(".questionBox").css("visibility","visible");
@@ -134,22 +134,22 @@ $(".timer").css("visibility","hidden");
 			$("#question").html("<img class='giph' src='assets/images/wrong10.gif'>");
 		}
 		//for last question, execute display end function after answer is selected
-		if (clickedButton==="Silly"){
+		if (clickedButton==="Biggie Smalls"){
 			$(".answer").css("visibility","hidden");
 			$(".timer").css("visibility","hidden");
-			$("#status").html("Correct!!!");
+			$("#status").html("Fosho!!!");
 			countCorrect++;
 			number++;
-			$("#question").html("<img class='giph' src='assets/images/dwarfs.gif'>");
+			$("#question").html("<img class='giph' src='assets/images/big.gif'>");
 			setTimeout(function(){displayEnd();},3000);
 		}
-		if (clickedButton==="Sleepy"||clickedButton==="Grumpy"||clickedButton==="Doc"){
+		if (clickedButton==="Juicy J"||clickedButton==="E 40"||clickedButton==="Drake"){
 			$(".answer").css("visibility","hidden");
 			$(".timer").css("visibility","hidden");
-			$("#status").html("That's not right...");
+			$("#status").html("Wrong!!!");
 			countIncorrect++;
 			number++;
-			$("#question").html("<img class='giph' src='assets/images/dwarfs.gif'>");
+			$("#question").html("<img class='giph' src='assets/images/wrong10.gif'>");
 			setTimeout(function(){displayEnd();},3000);
 		}
 	});
